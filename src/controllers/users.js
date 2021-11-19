@@ -1,5 +1,8 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 
+const imageBaseUrl = "https://drive.google.com/uc?id=";
+const videoBaseUrl = "https://www.youtube.com/embed/";
+
 const accessSpreadsheet = async (owner) => {
   const data = {};
   const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
@@ -16,6 +19,8 @@ const accessSpreadsheet = async (owner) => {
       (data["insta"] = row.instagram),
       (data["web"] = row.website),
       (data["email"] = row.email);
+    data["img0"] = imageBaseUrl + row.img0;
+    data["video0"] = videoBaseUrl + row.video0;
   });
   return data;
 };

@@ -2,7 +2,13 @@ extends base.pug
 //-include mixins/video
 
 block content
+    img(src=data.img0)
     h1=data.name
-    p=data.insta
-    p=data.web 
-    p=data.email
+    if data.insta
+        p=data.insta
+    if data.web
+        p=data.web
+    if data.email
+        p=data.email
+    iframe(src=data.video0 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    p hi
