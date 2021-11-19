@@ -19,3 +19,9 @@ app.use("/", rootRouter);
 app.use("/mush", userRouter);
 
 export default app;
+
+// HEROKU
+// heroku git:remote -a snugraduates-2021-mush
+// git add .
+// git commit -am "make it better"
+// git push heroku master
