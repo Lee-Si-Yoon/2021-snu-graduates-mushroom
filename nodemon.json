@@ -1,0 +1,4 @@
+{
+  "ignore": ["src/public/*", "webpack.config.js", "assets/*"],
+  "exec": "babel-node src/init.js"
+}
