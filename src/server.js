@@ -26,3 +26,4 @@ export default app;
 // git add .
 // git commit -am "make it better"
 // git push heroku master
+// git push heroku HEAD:master
