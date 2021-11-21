@@ -16,9 +16,11 @@ const accessSpreadsheet = async (owner) => {
   const rows = await sheet.getRows({ query: `name = ${owner}` });
   rows.forEach((row) => {
     (data["name"] = row.name),
+      (data["name(eng)"] = row.engName),
       (data["insta"] = row.instagram),
       (data["web"] = row.website),
       (data["email"] = row.email);
+    data["welcome"] = row.welcome;
     data["img0"] = imageBaseUrl + row.img0;
     data["video0"] = videoBaseUrl + row.video0;
   });
@@ -26,6 +28,6 @@ const accessSpreadsheet = async (owner) => {
 };
 
 export const leesiyoon = async (req, res) => {
-  const data = await accessSpreadsheet("이시윤");
-  return res.render("lsy", { pageTitle: "leesiyoon", data });
+  const data = await accessSpreadsheet("LeeSiYoon");
+  return res.render("leesiyoon", { pageTitle: "leesiyoon", data });
 };

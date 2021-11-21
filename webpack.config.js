@@ -2,16 +2,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 const path = require("path");
 
-const BASE_JS = "./src/public/js/";
+const BASE_JS = "./src/client/js/";
 
 module.exports = {
   entry: {
-    /*
-    app: BASE_JS + "app.js",
-    showImage: BASE_JS + "showImage.js",
-    home: BASE_JS + "home.js",
-    generate: BASE_JS + "generate.js",
-    */
+    main: BASE_JS + "main.js",
+    //showImage: BASE_JS + "showImage.js",
+    //home: BASE_JS + "home.js",
+    //generate: BASE_JS + "generate.js",
   },
   //mode: "development", //only on dev mode
   //watch: true, //only on dev mode

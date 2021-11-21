@@ -6,8 +6,8 @@ export const localsMiddleware = (req, res, next) => {
       " Build/4.1.A.0.562) AppleWebKit/534.30 (KHTML, like Gecko)" +
       " Version/4.0 Mobile Safari/534.30"
   );
-  console.log(md.userAgent());
-  res.locals.siteName = "버섯";
+  console.log(md.mobile());
+  res.locals.siteName = "mush";
   //res.locals.isHeroku = isHeroku;
   next();
 };

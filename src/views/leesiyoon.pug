@@ -1,0 +1,7 @@
+extends base.pug
+include mixins/owner
+include mixins/content
+
+block content
+    +owner(data.name, data.engName, data.insta, data.web, data.email, data.welcome)
+    +content(data.img0, data.video0)
