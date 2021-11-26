@@ -7,7 +7,7 @@ const BASE_JS = "./src/client/js/";
 module.exports = {
   entry: {
     main: BASE_JS + "main.js",
-    //showImage: BASE_JS + "showImage.js",
+    content: BASE_JS + "content.js",
     //home: BASE_JS + "home.js",
     //generate: BASE_JS + "generate.js",
   },
@@ -34,7 +34,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif|webp)$/i,
+        test: /\.(ico)$/i,
         loader: "file-loader",
         options: {
           name: "imgs/[name].[ext]",
