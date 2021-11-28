@@ -1,10 +1,11 @@
 mixin content(img0,video0)
-    div.slider__container
-        div.slider
-            div.slider__item
-                img(src=img0 alt=img0)
-            div.slider__item
-                iframe(src=video0 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            div.slider__item
-                img(src=img0 alt=img0)
-    script(src="/assets/js/content.js" defer) 
+    div.slider
+        div.slider__item
+            img(src=img0 alt=img0)
+        div.slider__item
+            iframe(src=video0 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    div.button__container
+        img(src="/assets/imgs/mush.ico")
+        div.word__container
+            p 나를 눌러라!
+    

@@ -1,6 +1,35 @@
 .home__links {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 150%;
+  font-weight: 600;
+  @include mobile {
+    a {
+      font-size: 42px;
+      line-height: 200%;
+    }
+  }
+  @include tablet {
+    a {
+      font-size: 42px;
+      line-height: 200%;
+    }
+  }
+  @include desktop {
+    a {
+      font-size: 1.5rem;
+      line-height: 220%;
+    }
+  }
+}
+
+canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+  //border: 1px red solid;
+  //width: 100%;
+  //height: 100%;
+  z-index: -1;
 }

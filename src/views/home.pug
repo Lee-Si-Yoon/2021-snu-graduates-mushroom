@@ -1,23 +1,25 @@
 extends base.pug
 
 block content
-    div.home__links
-        a(href= "/mush/leesiyoon") 강다현 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 박종현 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 빈지영 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 성지윤 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 손민지 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 손효진 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 안병남 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 여건주 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 오경원 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 오지원 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 유현 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 윤정연 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 윤지 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 이서윤 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 이시윤 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 이현민 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 이혜리 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 장재경 LeeSiyoon | 중닭같은 놈
-        a(href= "/mush/leesiyoon") 정아 LeeSiyoon | 중닭같은 놈
+    canvas 
+    div.home__links        
+        a(href="/mush/kja0") #{data[0].name} #{data[0].nameEng} | #{data[0].welcome}
+        a(href="/mush/jjk1") #{data[1].name} #{data[1].nameEng} | #{data[1].welcome}
+        a(href="/mush/lhr2") #{data[2].name} #{data[2].nameEng} | #{data[2].welcome}
+        a(href="/mush/lhm3") #{data[3].name} #{data[3].nameEng} | #{data[3].welcome}
+        a(href="/mush/lsy4") #{data[4].name} #{data[4].nameEng} | #{data[4].welcome}
+        a(href="/mush/lsy5") #{data[5].name} #{data[5].nameEng} | #{data[5].welcome}
+        a(href="/mush/yjy6") #{data[6].name} #{data[6].nameEng} | #{data[6].welcome}
+        a(href="/mush/pyh7") #{data[7].name} #{data[7].nameEng} | #{data[7].welcome}
+        a(href="/mush/ojw8") #{data[8].name} #{data[8].nameEng} | #{data[8].welcome}
+        a(href="/mush/okw9") #{data[9].name} #{data[9].nameEng} | #{data[9].welcome}
+        a(href="/mush/ygj10") #{data[10].name} #{data[10].nameEng} | #{data[10].welcome}
+        a(href="/mush/abn11") #{data[11].name} #{data[11].nameEng} | #{data[11].welcome}
+        a(href="/mush/shj12") #{data[12].name} #{data[12].nameEng} | #{data[12].welcome}
+        a(href="/mush/smj13") #{data[13].name} #{data[13].nameEng} | #{data[13].welcome}
+        a(href="/mush/sjy14") #{data[14].name} #{data[14].nameEng} | #{data[14].welcome}
+        a(href="/mush/bjy15") #{data[15].name} #{data[15].nameEng} | #{data[15].welcome}
+        a(href="/mush/pjh16") #{data[16].name} #{data[16].nameEng} | #{data[16].welcome}
+        a(href="/mush/kyj17") #{data[17].name} #{data[17].nameEng} | #{data[17].welcome}
+        a(href="/mush/kdh18") #{data[18].name} #{data[18].nameEng} | #{data[18].welcome}
+    script(src="/assets/js/home.js" defer) 

@@ -7,21 +7,6 @@ header {
     font-weight: 600;
     text-transform: uppercase;
   }
-  @include mobile {
-    a {
-      font-size: 10px;
-    }
-  }
-  @include tablet {
-    a {
-      font-size: 12px;
-    }
-  }
-  @include desktop {
-    a {
-      font-size: 14px;
-    }
-  }
   ul {
     display: flex;
     justify-content: space-between;

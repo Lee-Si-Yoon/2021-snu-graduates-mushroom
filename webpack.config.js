@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     main: BASE_JS + "main.js",
     content: BASE_JS + "content.js",
-    //home: BASE_JS + "home.js",
+    home: BASE_JS + "home.js",
     //generate: BASE_JS + "generate.js",
   },
   //mode: "development", //only on dev mode
@@ -34,7 +34,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(ico)$/i,
+        test: /\.(jpe?g|png|webp|ico)$/i,
         loader: "file-loader",
         options: {
           name: "imgs/[name].[ext]",
@@ -45,7 +45,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/styles.css",
-    }),
+    }) /*,
     new ImageminWebpWebpackPlugin({
       config: [
         {
@@ -59,6 +59,6 @@ module.exports = {
       detailedLogs: false,
       silent: false,
       strict: true,
-    }),
+    }),*/,
   ],
 };
