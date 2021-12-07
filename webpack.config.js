@@ -34,7 +34,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpe?g|png|webp|ico)$/i,
+        test: /\.(jpe?g|png|webp|ico|ttf)$/i,
         loader: "file-loader",
         options: {
           name: "imgs/[name].[ext]",

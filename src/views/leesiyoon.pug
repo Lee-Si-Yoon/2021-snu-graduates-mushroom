@@ -3,6 +3,14 @@ include mixins/owner
 include mixins/content
 
 block content
-    +content(data.img0, data.video0)
-    +owner(data.name, data.engName, data.insta, data.web, data.email, data.welcome)
+    +content(data.imgs, data.videos)
+    div.owner__container
+        +owner(data.name, data.nameEng, data.insta, data.web, data.email, data.welcome)
+    if data.text
+        div.text__container
+            p=data.text
+    if data.caption
+        div.caption__container
+            each caption in data.caption 
+                p=caption
     script(src="/assets/js/content.js" defer) 

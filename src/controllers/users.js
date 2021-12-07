@@ -1,8 +1,15 @@
+function parseCaption(c) {
+  if (c == "1") {
+    return;
+  } else {
+    const cEach = c.split("/");
+    //console.log(cEach);
+    return cEach;
+  }
+}
+
 export const accessSpreadsheet = async () => {
   const { GoogleSpreadsheet } = require("google-spreadsheet");
-  const imageBaseUrl = "https://drive.google.com/uc?id=";
-  const videoBaseUrl = "https://www.youtube.com/embed/";
-
   const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
   const doc = new GoogleSpreadsheet(spreadsheetId);
   await doc.useServiceAccountAuth({
@@ -23,8 +30,28 @@ export const accessSpreadsheet = async () => {
       web: row.website,
       email: row.email,
       welcome: row.welcome,
-      img0: imageBaseUrl + row.img0,
-      video0: videoBaseUrl + row.video0,
+      text: row.text,
+      caption: parseCaption(row.caption),
+      imgs: [
+        row.img0,
+        row.img1,
+        row.img2,
+        row.img3,
+        row.img4,
+        row.img5,
+        row.img6,
+        row.img7,
+        row.img8,
+        row.img9,
+      ].filter((n) => n),
+      videos: [
+        row.video0,
+        row.video1,
+        row.video2,
+        row.video3,
+        row.video4,
+        row.video5,
+      ].filter((n) => n),
     });
   });
 
@@ -110,6 +137,7 @@ export const shj12 = async (req, res) => {
 export const smj13 = async (req, res) => {
   const owner = "손민지";
   const data = await findByName(owner);
+  console.log(data);
   return res.render("leesiyoon", { pageTitle: owner, data });
 };
 export const sjy14 = async (req, res) => {

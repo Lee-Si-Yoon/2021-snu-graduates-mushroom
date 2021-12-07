@@ -1,0 +1,46 @@
+.owner__container {
+  margin-top: 30px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  .owner__contact {
+    font-weight: 200;
+    display: flex;
+    align-items: flex-end;
+    line-height: 120%;
+  }
+  .owner__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-weight: 700;
+      margin-right: 5px;
+    }
+    h2 {
+      font-weight: 400;
+    }
+    h3 {
+      font-weight: 300;
+    }
+  }
+}
+
+.text__container {
+  margin-top: 30px;
+  padding: 0 50px;
+  p {
+    line-height: 140%;
+  }
+}
+
+.caption__container {
+  margin-top: 30px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  p {
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}

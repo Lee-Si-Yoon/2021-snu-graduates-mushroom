@@ -31,7 +31,7 @@ function words() {
     "나를 눌러라!",
     "버섯의 소리가 들리는가!",
     "버섯 자라는 중",
-    "여기를 봐라!",
+    "여기를 눌러!",
   ];
   const randomNumber = Math.floor(Math.random() * wordList.length);
   word.innerHTML = wordList[randomNumber];
