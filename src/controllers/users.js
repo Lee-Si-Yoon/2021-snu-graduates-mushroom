@@ -30,7 +30,7 @@ export const accessSpreadsheet = async () => {
       web: row.website,
       email: row.email,
       welcome: row.welcome,
-      text: row.text,
+      text: parseCaption(row.text),
       caption: parseCaption(row.caption),
       imgs: [
         row.img0,

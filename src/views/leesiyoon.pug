@@ -8,7 +8,8 @@ block content
         +owner(data.name, data.nameEng, data.insta, data.web, data.email, data.welcome)
     if data.text
         div.text__container
-            p=data.text
+            each text in data.text
+                p=text
     if data.caption
         div.caption__container
             each caption in data.caption 
